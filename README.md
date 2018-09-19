@@ -1,13 +1,20 @@
-# Spring Data REST and JPA Example
-This project depicts the Spring Boot Example with Spring Data REST and JPA Example.
+# Sistema de controle de Jobs/Tasks 
+Sistema de serviços/Spring boot para controle de Jobs/Tasks. 
 
-## Description
-This Project shows the list of Users which are stored in the In-Memory H2 Database. Using the following endpoints, different operations can be achieved:
-- `/users` - This returns the list of Users in the Users table which is created in H2
-- `/users/name/{name}` - This returns the details of the Users passed in URL
-- `/users/load` - Add new users using the Users model. eg. { "name": "Ajay", "teamName": "Development", "salary": 100 }
+## Descrição
+Este projeto utiliza o Spring Boot e o banco de dados In-Memory H2. Usando serviços/end-points para diferentes operações como:
+GET- `/bancointer/jobs` - Retorna todos os registros de Jobs criados no banco de dados em memória H2.
+POST- `/bancointer/jobs` - Inclui os registros de Jobs passados no banco de dados em memória H2.
+GET- `/bancointer/jobs/{id}` - Retorna um Job pelo id.
+DELETE- `/bancointer/jobs/{id}` - Deleta um Job pelo id.
+PUT- `/bancointer/jobs/{id}` - Atualiza/PUT um Job pelo id.
+GET- `/bancointer/tasks` - Retorna todos os registros de Tasks criados no banco de dados em memória H2.
+POST- `/bancointer/tasks` - Inclui os registros de Task passados no banco de dados em memória H2.
+GET- `/bancointer/tasks/{id}` - Retorna um Task pelo id.
+DELETE- `/bancointer/tasks/{id}` - Deleta um Task pelo id.
+PUT- `/bancointer/tasks/{id}` - Atualiza/PUT um Task pelo id.
 
-## Libraries used
+## Tecnologias utilizadas
 - Spring Boot
 - Spring Configuration
 - Spring REST Controller
@@ -15,8 +22,5 @@ This Project shows the list of Users which are stored in the In-Memory H2 Databa
 - H2
 - Development Tools
 
-## Git 2.10.0
-- IntelliJ IDEA 2016.2.4
-
 ## Compilation Command
-- `mvn clean install` - Plain maven clean and install
+- `mvn clean install`  
